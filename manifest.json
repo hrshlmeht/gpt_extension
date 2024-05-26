@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "My First_Extension",
+    "version": "1.0",
+    "description": "A simple Chrome extension for integration of ChatGPT.",
+    "permissions": ["storage", "activeTab" , "scripting"],
+    "content_scripts": [
+      {
+        "matches": ["https://twitter.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
